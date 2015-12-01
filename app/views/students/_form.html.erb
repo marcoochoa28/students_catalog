@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :first_name %><br>
+    <%= f.label :first_name, "Nombre(s)" %><br>
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
-    <%= f.label :last_name %><br>
+    <%= f.label :last_name, "Apellidos" %><br>
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :birthdate %><br>
+    <%= f.label :birthdate, "Fecha de nacimiento" %><br>
     <%= f.date_select :birthdate %>
   </div>
   <div class="field">
-    <%= f.label :control_number %><br>
+    <%= f.label :control_number, "Número de control" %><br>
     <%= f.text_field :control_number %>
   </div>
   <div class="field">
-    <%= f.label :semester %><br>
+    <%= f.label :semester, "Semestre" %><br>
     <%= f.number_field :semester %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Guardar" %>
   </div>
 <% end %>

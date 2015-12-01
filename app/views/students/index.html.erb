@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Students</h1>
+<h1>Lista de estudiantes</h1>
 
 <table>
   <thead>
     <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th>Birthdate</th>
-      <th>Control number</th>
-      <th>Semester</th>
+      <th>Nombre(s)</th>
+      <th>Apellidos</th>
+      <th>Fecha de nacimiento</th>
+      <th>Numero de control</th>
+      <th>Semestre</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,9 +22,9 @@
         <td><%= student.birthdate %></td>
         <td><%= student.control_number %></td>
         <td><%= student.semester %></td>
-        <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', student %></td>
+        <td><%= link_to 'Editar', edit_student_path(student) %></td>
+        <td><%= link_to 'Borrar', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Student', new_student_path %>
+<%= link_to 'Crear nuevo estudiante', new_student_path %>

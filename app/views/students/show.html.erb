@@ -1,29 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>First name:</strong>
-  <%= @student.first_name %>
+  <strong>Nombre completo:</strong>
+  <%= @student.name %>
 </p>
 
 <p>
-  <strong>Last name:</strong>
-  <%= @student.last_name %>
-</p>
-
-<p>
-  <strong>Birthdate:</strong>
+  <strong>Fecha de nacimiento:</strong>
   <%= @student.birthdate %>
 </p>
 
 <p>
-  <strong>Control number:</strong>
+  <strong>Número de control:</strong>
   <%= @student.control_number %>
 </p>
 
 <p>
-  <strong>Semester:</strong>
+  <strong>Semestre:</strong>
   <%= @student.semester %>
 </p>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+<%= link_to 'Editar', edit_student_path(@student) %> |
+<%= link_to 'Atrás', root_path %>
