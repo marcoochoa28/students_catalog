@@ -12,10 +12,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
+gem 'tzinfo-data'
+
+gem "rspec-rails", :group => [:development, :test]
 
 group :development, :test do
   gem 'byebug'
 end
+
+gem 'capybara'
+gem 'selenium-webdriver'
 
 group :development do
   gem 'web-console', '~> 2.0'
