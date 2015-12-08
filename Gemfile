@@ -18,13 +18,16 @@ gem "rspec-rails", :group => [:development, :test]
 
 group :development, :test do
   gem 'byebug'
+   gem 'factory_girl_rails'
 end
 
-gem 'capybara'
-gem 'selenium-webdriver'
+group :test do
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+end
 
 group :development do
   gem 'web-console', '~> 2.0'
-
   gem 'spring'
 end
